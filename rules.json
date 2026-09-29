@@ -3,8 +3,6 @@
   "updated": "2026-09-29",
   "serverName": "Noobs Rust Server #1",
   "tagline": "PvP on. Bases protected. Raiding by mutual war only.",
-  "discord": "[DISCORD INVITE LINK]",
-  "wipeSchedule": "[e.g. Map every Thursday, blueprints monthly]",
   "summary": [
     "PvP is on everywhere, but bases are protected.",
     "You can only raid a side you are at war with, and both sides must agree to the war.",
@@ -18,7 +16,7 @@
       "title": "The Basics",
       "rules": [
         "Don't be a dick. Most of these rules come down to that.",
-        "Admin decisions are final. If you think one's wrong, take it to Discord, not global chat.",
+        "Admin decisions are final. If you think one's wrong, take it up with an admin privately, not in global chat.",
         "By playing here you agree to these rules. \"I didn't read them\" isn't a defence."
       ]
     },
@@ -30,7 +28,6 @@
         "**No racism, homophobia, transphobia or other bigotry.** That covers slurs, \"jokes\" and names. Expect a ban, not a warning.",
         "No threats involving real life. No doxxing, and no posting anyone's personal info.",
         "No spamming, advertising other servers, or excessive caps.",
-        "Harassment is out. Winding someone up once is banter. Following them around the map for an hour isn't.",
         "Offensive player names, clan tags or signs get removed, and you may be too."
       ]
     },
@@ -41,7 +38,7 @@
         "**PvP is on.** You can be killed anywhere, anytime.",
         "**Bases are protected.** You cannot damage another player's base unless your sides are at war (see Wars).",
         "No griefing around the protection rules. Don't wall people in, block monuments, or build to trap players or loot.",
-        "Loot left in the open is fair game. Loot in someone's base isn't, unless you're at war with them."
+        "Loot left in the open, or in an **unlocked base**, is fair game. Lock your doors and boxes. Locked loot is off limits unless you're at war with the owner."
       ]
     },
     {
@@ -68,6 +65,16 @@
       ]
     },
     {
+      "id": "teleport",
+      "title": "Teleporting",
+      "rules": [
+        "Set homes with **/sethome <name>** and go back with **/home <name>**. Request a teleport to a player with **/tpr <name>**, and accept one with **/tpa**.",
+        "Teleports have cooldowns and a short countdown. You can't teleport straight out of a fight.",
+        "Don't set homes inside someone else's base, raid domes, event areas or control points.",
+        "**No TP traps.** Luring someone with a teleport request to kill them gets you banned."
+      ]
+    },
+    {
       "id": "economy",
       "title": "Economy (NB)",
       "rules": [
@@ -83,8 +90,7 @@
       "rules": [
         "You can place a bounty on a player with NB. It's expensive on purpose, so make it count.",
         "Whoever kills the target collects the bounty.",
-        "**No bounty farming.** Setting up kills with friends, teammates or alts to cash in bounties gets everyone involved banned and their NB wiped.",
-        "Using bounties to hound the same player over and over counts as harassment."
+        "**No bounty farming.** Setting up kills with friends, teammates or alts to cash in bounties gets everyone involved banned and their NB wiped."
       ]
     },
     {
@@ -124,7 +130,7 @@
       "title": "Cheating & Exploits",
       "rules": [
         "**No cheats, scripts, macros or third-party tools.** That's a permanent ban with no appeal.",
-        "No exploiting bugs. If you find one, report it on Discord and you might get a reward.",
+        "No exploiting bugs. If you find one, report it to an admin and you might get a reward.",
         "Playing with a known cheater, or \"not knowing\" your teammate was cheating, can get the whole team banned.",
         "Alt accounts used to get round bans or rules get banned along with the main account."
       ]
@@ -134,9 +140,8 @@
       "title": "Staff & Punishments",
       "rules": [
         "Punishments depend on how serious it is: warning, mute, kick, temporary ban, permanent ban. Admins can skip straight to a ban.",
-        "Report problems on Discord with evidence (screenshots or clips). Don't start drama in global chat.",
-        "Staff won't spawn items or help one side in a war.",
-        "Wipe schedule: **[e.g. Map every Thursday, blueprints monthly]**."
+        "Report problems to an admin with evidence (screenshots or clips). Don't start drama in global chat.",
+        "Staff won't spawn items or help one side in a war."
       ]
     }
   ]
