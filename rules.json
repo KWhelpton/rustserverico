@@ -1,12 +1,13 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-29",
   "serverName": "Noobs Rust Server #1",
   "tagline": "PvP on. Bases protected. Raiding by mutual war only.",
   "summary": [
     "PvP is on everywhere, but bases are protected.",
     "You can only raid a side you are at war with, and both sides must agree to the war.",
-    "Fight over County control points, hunt bosses, loot plane crashes and raid NPC bases for NB and gear.",
+    "Fight over County control points, hunt bosses, hit convoys, loot plane crashes and raid NPC bases for NB and gear.",
+    "Max team size is **5**.",
     "No racism or bigotry. Swearing and banter are fine.",
     "No cheating, no exploiting. Type **/rules** in game for the full rules."
   ],
@@ -28,7 +29,7 @@
         "**No racism, homophobia, transphobia or other bigotry.** That covers slurs, \"jokes\" and names. Expect a ban, not a warning.",
         "No threats involving real life. No doxxing, and no posting anyone's personal info.",
         "No spamming, advertising other servers, or excessive caps.",
-        "Offensive player names, clan tags or signs get removed, and you may be too."
+        "Offensive player names, clan tags or signs get removed, and you may be too. That includes images and text put on signs."
       ]
     },
     {
@@ -37,30 +38,35 @@
       "rules": [
         "**PvP is on.** You can be killed anywhere, anytime.",
         "**Bases are protected.** You cannot damage another player's base unless your sides are at war (see Wars).",
+        "Your turrets and traps won't hit other players unless you're at war with them. Don't rely on them to defend you from everyone.",
         "No griefing around the protection rules. Don't wall people in, block monuments, or build to trap players or loot.",
-        "Loot left in the open, or in an **unlocked base**, is fair game. Lock your doors and boxes. Locked loot is off limits unless you're at war with the owner."
+        "Loot left in the open, or in an **unlocked base**, is fair game. Lock your doors and boxes. Locked loot is off limits unless you're at war with the owner.",
+        "Your **backpack drops when you die** and anyone can loot it. Don't carry what you can't afford to lose."
       ]
     },
     {
       "id": "wars",
       "title": "Wars",
       "rules": [
-        "Players, teams and clans can declare war with **/war declare**. Both sides have to agree.",
-        "Once accepted, there's a **5-minute truce**, then both sides can raid any base with an enemy on the TC.",
-        "Wars last **24 hours** or until both sides agree to peace with **/war peace**.",
-        "Don't want to be raided? Use **/war autodecline** and nobody can declare on you.",
-        "Don't pressure or threaten people into accepting a war. If they decline, they decline.",
-        "Don't hop between teams or clans to dodge a war you agreed to. You stay locked in until it ends.",
-        "Don't park a war base on someone else's TC or next to a neutral base to drag them into it."
+        "Only a team leader, clan owner/moderator or solo player can declare. Use **/war declare <player or clan tag>**. Your target's leader has 10 minutes to **/war accept** or **/war decline**.",
+        "Once accepted, there's a **5-minute truce**. After that, for **24 hours**, both sides can damage anything the other side owns, including any base with an enemy on the TC, and each side's turrets and traps can hit the other.",
+        "Wars end after 24 hours, or early if both leaders agree with **/war peace <name>**. Check your wars with **/war** or **/war list**.",
+        "Don't want to be raided? Use **/war autodecline**. If anyone on your side turns it on, nobody can declare on your side, but your side can't declare either. It doesn't end wars you're already in.",
+        "A side can be in up to 3 wars at once. After a decline, you have to wait 30 minutes before declaring on the same side again, and 60 minutes after a war ends.",
+        "Don't pressure or threaten people into accepting a war. If they decline, they decline. Repeatedly re-declaring on someone who keeps declining counts as harassment.",
+        "**Teams are locked during a war**, including the truce. Nobody on either side can leave, be kicked, join, invite or create a team until all their wars end.",
+        "**Don't drag neutrals into your war.** Getting authed on someone else's TC mid-war makes their base raidable too. Don't do it, and don't park a war base on or next to a neutral base."
       ]
     },
     {
       "id": "building",
       "title": "Building",
       "rules": [
-        "Max team or clan size: **[X]**. Alliances that get round this aren't allowed.",
+        "Max team or clan size: **5**. Alliances that get round this aren't allowed.",
         "Don't build in or block monuments, roads, rail lines or event areas.",
         "Keep your base a reasonable distance from others. No building right on top of someone's base.",
+        "Use **/remove** to pick up your own building parts and deployables for a partial refund. Don't use it to strip a base that's being raided so the enemy gets nothing.",
+        "Doors close by themselves after a few seconds. Use **/ad** to turn this off or change the delay.",
         "Abandoned bases decay as normal. Admins may remove anything that's causing server lag."
       ]
     },
@@ -68,8 +74,10 @@
       "id": "teleport",
       "title": "Teleporting",
       "rules": [
-        "Set homes with **/sethome <name>** and go back with **/home <name>**. Request a teleport to a player with **/tpr <name>**, and accept one with **/tpa**.",
-        "Teleports have cooldowns and a short countdown. You can't teleport straight out of a fight.",
+        "Set homes with **/sethome <name>** and go back with **/home <name>**. Request a teleport to a player with **/tpr <name>**, accept one with **/tpa**, and cancel with **/tpc**.",
+        "You can have **2 homes**, and they must be on a foundation you or a teammate own. Homes and teleport requests have a **10-minute cooldown**, a **15-second countdown** and a limit of 5 a day.",
+        "Taking damage cancels your teleport. You also can't teleport while wounded, building blocked, crafting or in a safe zone. Don't try to use a teleport to escape a fight.",
+        "Server warps are listed with **/warp list**.",
         "Don't set homes inside someone else's base, raid domes, event areas or control points.",
         "**No TP traps.** Luring someone with a teleport request to kill them gets you banned."
       ]
@@ -78,7 +86,10 @@
       "id": "economy",
       "title": "Economy (NB)",
       "rules": [
-        "**NB** is the server currency. You earn it by playing and spend it on things like raids and bounties.",
+        "**NB** is the server currency. You start with 1,000 NB. Check your balance with **/balance**.",
+        "You earn NB by gathering (ore, wood, stone and plants) and killing animals, scientists and other NPCs. You also get it from bosses, raid bases and bounties. Killing other players pays nothing on its own.",
+        "Killing a teammate costs you 25 NB. Suicide costs you 100 NB.",
+        "Spend NB on raid bases, bounties and bounty map reveals.",
         "No buying or selling NB, items or accounts for real money.",
         "Trades between players are at your own risk. Staff won't refund a bad deal.",
         "NB earned through bugs, exploits or alt accounts will be wiped, along with a ban."
@@ -88,8 +99,11 @@
       "id": "bounties",
       "title": "Bounties",
       "rules": [
-        "You can place a bounty on a player with NB. It's expensive on purpose, so make it count.",
+        "Place a bounty with **/bounty place <player> <amount>**. The minimum is **10,000 NB**, plus a 20% fee you don't get back. You can't put a bounty on a teammate.",
+        "See active bounties with **/bounty list**. Pay 100 NB with **/bounty map** to show bounty targets on your map for 5 minutes.",
         "Whoever kills the target collects the bounty.",
+        "If the target survives for 60 minutes of online time, they keep the bounty. Time spent offline, asleep or in a safe zone doesn't count.",
+        "If the target kills the player who put the bounty on them, the target collects that bounty.",
         "**No bounty farming.** Setting up kills with friends, teammates or alts to cash in bounties gets everyone involved banned and their NB wiped."
       ]
     },
@@ -97,8 +111,11 @@
       "id": "county",
       "title": "County Wars",
       "rules": [
-        "Control points around the map (towns and monuments) are guarded by scientists. Clear the guards and capture the point for your team.",
+        "Control points around the map (towns and monuments) are guarded by scientists. Kill all the guards, then **hold E on the terminal for 60 seconds** to capture the point for your team. Any other player in the zone pauses the capture.",
         "Captured points belong to your team and show on the map. Anyone can try to take them off you.",
+        "Guards respawn every 30 minutes and won't attack the team that owns the point.",
+        "Each point you own pays **25 scrap every 30 minutes** to every online team member into the team bank. You also get +5% gather per point (up to +25%), and a 10% cut of what other players gather within 300m.",
+        "Use **/cw** to see the points, **/cw bank** to check your bank and **/cw claim** to take it out. Anyone on your team can claim the whole bank, so sort out sharing inside your team. Staff won't settle bank disputes.",
         "Fighting over control points is always fair game. Don't expect sympathy if you lose one.",
         "Don't build on, around or inside a control point to block captures.",
         "No exploiting captures (glitching into the capture object, abusing NPC pathing, etc.)."
@@ -108,10 +125,13 @@
       "id": "raidbases",
       "title": "Raid Bases",
       "rules": [
-        "NPC raid bases spawn around the map and show on your map. Type **/rb** for info and the leaderboard.",
-        "You can buy your own raid with **/buyraid** for NB.",
+        "NPC raid bases spawn around the map and show on your map. Type **/rb** for active raids and **/rb top** for the leaderboard.",
+        "Buy your own raid with **/buyraid**. Easy is 500 NB, Medium 1,500, Hard 4,000 and Expert 10,000. You can have one bought raid per team at a time, with a 30-minute cooldown.",
+        "Clearing a raid base pays NB, split between everyone who took part.",
         "Raid bases belong to whoever starts them. Don't interfere with someone else's raid, and don't camp the dome to ambush them.",
-        "No building inside or around the dome, and no exploiting the bases (glitching through walls, bugs to reach loot).",
+        "**PvP is always on inside the dome.**",
+        "Inside the dome you can't teleport in or out, auth on the TC, or build anything except ladders, barricades and sleeping bags. Doors can't be opened, so you have to break them.",
+        "No exploiting the bases (glitching through walls, bugs to reach loot, damaging them from outside the dome).",
         "Locked out of a raid? You'll be moved out of the dome. Don't keep trying to get back in."
       ]
     },
@@ -119,10 +139,25 @@
       "id": "events",
       "title": "Events & Bosses",
       "rules": [
-        "Plane crashes, named bosses and other events are first come, first served. Whoever gets the loot keeps it.",
-        "Bosses rotate and drop building supplies plus one strong weapon each. Expect a fight for them.",
+        "Plane crashes, named bosses, convoys and other events are first come, first served. Whoever gets the loot keeps it.",
+        "Bosses rotate and drop building supplies plus one strong weapon each. The player who kills a boss also gets 2,500-5,000 NB. Type **/boss** to see which bosses are up. Expect a fight for them.",
+        "Plane crashes are guarded by heavy scientists, and the locked crate takes 3 minutes to hack.",
+        "Armed convoys and an armoured train travel the roads and rails. Once you attack a convoy, you have 15 minutes to clear it before it escapes with the loot. The reward crate stays locked until every guard is dead and all vehicles are destroyed.",
+        "Zombie hordes roam the map and will chase you into your base. Getting killed by zombies spawns a new horde. Type **/hordeinfo** to see how many are out.",
         "Don't build near event sites or monuments to farm them.",
         "No exploiting NPCs or bosses (pulling them into walls, getting them stuck on terrain, etc.)."
+      ]
+    },
+    {
+      "id": "commands",
+      "title": "Useful Commands",
+      "rules": [
+        "**/kit**: claim kits.",
+        "**/voteday**: vote to skip the night.",
+        "**/teamhp**: turn teammate health bars on or off.",
+        "**/dn**: turn the kill feed on or off. Use **/dn teamonly** for your team's deaths only.",
+        "**/gather**: show the current gather rates.",
+        "**/ipanel**: show or hide the info panel."
       ]
     },
     {
