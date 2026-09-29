@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "updated": "2026-09-29",
+  "serverName": "[SERVER NAME]",
+  "tagline": "PvP on. Bases protected. Raiding by mutual war only.",
+  "discord": "[DISCORD INVITE LINK]",
+  "wipeSchedule": "[e.g. Map every Thursday, blueprints monthly]",
+  "summary": [
+    "PvP is on everywhere, but bases are protected.",
+    "You can only raid a side you are at war with, and both sides must agree to the war.",
+    "No racism or bigotry. Swearing and banter are fine.",
+    "No cheating, no exploiting. Type /rules in game for the full rules."
+  ],
+  "sections": [
+    {
+      "id": "basics",
+      "title": "The Basics",
+      "rules": [
+        "Don't be a dick. Most of these rules come down to that.",
+        "Admin decisions are final. If you think one's wrong, take it to Discord, not global chat.",
+        "By playing here you agree to these rules. \"I didn't read them\" isn't a defence."
+      ]
+    },
+    {
+      "id": "chat",
+      "title": "Chat & Conduct",
+      "rules": [
+        "Swearing, banter and trash talk are fine. This is an adult server.",
+        "**No racism, homophobia, transphobia or other bigotry.** That covers slurs, \"jokes\" and names. Expect a ban, not a warning.",
+        "No threats involving real life. No doxxing, and no posting anyone's personal info.",
+        "No spamming, advertising other servers, or excessive caps.",
+        "Harassment is out. Winding someone up once is banter. Following them around the map for an hour isn't.",
+        "Offensive player names, clan tags or signs get removed, and you may be too."
+      ]
+    },
+    {
+      "id": "pvp",
+      "title": "PvE, PvP & Raiding",
+      "rules": [
+        "**PvP is on.** You can be killed anywhere, anytime.",
+        "**Bases are protected.** You cannot damage another player's base unless your sides are at war (see Wars).",
+        "No griefing around the protection rules. Don't wall people in, block monuments, or build to trap players or loot.",
+        "Loot left in the open is fair game. Loot in someone's base isn't, unless you're at war with them."
+      ]
+    },
+    {
+      "id": "wars",
+      "title": "Wars",
+      "rules": [
+        "Players, teams and clans can declare war with **/war declare**. Both sides have to agree.",
+        "Once accepted, there's a **5-minute truce**, then both sides can raid any base with an enemy on the TC.",
+        "Wars last **24 hours** or until both sides agree to peace with **/war peace**.",
+        "Don't want to be raided? Use **/war autodecline** and nobody can declare on you.",
+        "Don't pressure or threaten people into accepting a war. If they decline, they decline.",
+        "Don't hop between teams or clans to dodge a war you agreed to. You stay locked in until it ends.",
+        "Don't park a war base on someone else's TC or next to a neutral base to drag them into it."
+      ]
+    },
+    {
+      "id": "building",
+      "title": "Building",
+      "rules": [
+        "Max team or clan size: **[X]**. Alliances that get round this aren't allowed.",
+        "Don't build in or block monuments, roads, rail lines or event areas.",
+        "Keep your base a reasonable distance from others. No building right on top of someone's base.",
+        "Abandoned bases decay as normal. Admins may remove anything that's causing server lag."
+      ]
+    },
+    {
+      "id": "raidbases",
+      "title": "Raid Bases",
+      "rules": [
+        "Raid bases belong to whoever starts them. Don't interfere with someone else's raid.",
+        "Don't exploit the bases, for example by glitching through walls or using bugs to take loot."
+      ]
+    },
+    {
+      "id": "cheating",
+      "title": "Cheating & Exploits",
+      "rules": [
+        "**No cheats, scripts, macros or third-party tools.** That's a permanent ban with no appeal.",
+        "No exploiting bugs. If you find one, report it on Discord and you might get a reward.",
+        "Playing with a known cheater, or \"not knowing\" your teammate was cheating, can get the whole team banned.",
+        "Alt accounts used to get round bans or rules get banned along with the main account."
+      ]
+    },
+    {
+      "id": "staff",
+      "title": "Staff & Punishments",
+      "rules": [
+        "Punishments depend on how serious it is: warning, mute, kick, temporary ban, permanent ban. Admins can skip straight to a ban.",
+        "Report problems on Discord with evidence (screenshots or clips). Don't start drama in global chat.",
+        "Staff won't spawn items or help one side in a war.",
+        "Wipe schedule: **[e.g. Map every Thursday, blueprints monthly]**."
+      ]
+    }
+  ]
+}
